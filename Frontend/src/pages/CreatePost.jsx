@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+const API = import.meta.env.VITE_API_URL;
 const CreatePost = () => {
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
@@ -7,7 +8,7 @@ const CreatePost = () => {
 
     const formData = new FormData(e.target);
     axios
-      .post("http://localhost:3000/create-post", formData)
+      .post(`${API}/create-post`, formData)
       .then(() => {
         navigate("/feed");
       })
