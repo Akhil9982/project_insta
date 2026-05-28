@@ -51,7 +51,7 @@ Deployment
 ⸻
 
 📂 Project Structure
-
+```bash
 project_insta/
 │
 ├── Backend/
@@ -65,77 +65,83 @@ project_insta/
 │   └── package.json
 │
 └── README.md
-
+```
 ⸻
 
 ⚙️ Environment Variables
 
 Create a .env file inside the backend folder.
-
+```bash
 PORT=10000
 MONGO_URI=your_mongodb_connection
 IMAGEKIT_PUBLIC_KEY=your_public_key
 IMAGEKIT_PRIVATE_KEY=your_private_key
 IMAGEKIT_URL_ENDPOINT=your_url_endpoint
+```
 
 Create a .env file inside the frontend folder.
-
+```bash
 VITE_API_URL=https://your-render-url.onrender.com
-
+```
 ⸻
 
 📦 Installation & Setup
 
 1. Clone the repository
-
+```bash
 git clone https://github.com/Akhil9982/project_insta.git
-
+```
 ⸻
 
 2. Install dependencies
 
 Backend
-
+```bash
 cd Backend
 npm install
-
+```
 Frontend
-
+```bash
 cd frontend
 npm install
-
+```
 ⸻
 
 3. Start the development servers
 
 Backend
-
+```bash
 npm start
-
+```
 Frontend
-
+```bash
 npm run dev
-
+```
 ⸻
 
 🔗 API Endpoints
 
 Create Post
 
+```bash
 POST /create-post
+```
+### Form Data
 
-Form Data
-
-Key	Type
-image	File
-caption	String
+| Key | Type |
+|---|---|
+| image | File |
+| caption | String |
 
 ⸻
 
 Get All Posts
 
-GET /posts
+```bash
+http
 
+GET /posts
+```
 ⸻
 
 🛡️ Backend Security Features
@@ -149,10 +155,6 @@ GET /posts
 ⸻
 
 📸 Screenshots
-
-Add screenshots here after deployment.
-
-Example:
 
 ![Home Page](./images/project-insta-feed.png)
 
