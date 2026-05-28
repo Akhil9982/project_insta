@@ -6,7 +6,10 @@ const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://project-insta-mu.vercel.app",
+  credentials: true,
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
