@@ -98,6 +98,11 @@ app.get("/posts", async (req, res) => {
     });
   }
 });
+
+app.get("/", (req, res) => {
+  res.send("API is running");
+});
+
 app.use((err, req, res, next) => {
   return res.status(400).json({
     message: err.message,
